@@ -1,23 +1,27 @@
-@extends('layouts.app')
+@include('admin.layouts.header')
+  <div id="wrapper">
+    <!-- Sidebar -->
+@include('admin.layouts.sidebar')
+    <!-- Sidebar -->
+    <div id="content-wrapper" class="d-flex flex-column">
+      <div id="content">
+        <!-- TopBar -->
+@include('admin.layouts.navbar')
+        <!-- Topbar -->
 
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    {{ __('You are logged in!') }}
-                </div>
-            </div>
-        </div>
+        <!-- Container Fluid-->
+@include('admin.layouts.container')
+        <!---Container Fluid-->
+      </div>
+      <!-- Footer -->
+@include('admin.layouts.footer')
+      <!-- Footer -->
     </div>
-</div>
-@endsection
+  </div>
+
+  <!-- Scroll to top -->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  

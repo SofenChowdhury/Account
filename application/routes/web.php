@@ -17,18 +17,24 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
 
-// Route::get('/dashboard', function (){
-//             return view('admin.dashboard');
-//         });
+// Route::get('/index', function () {
+// 	return view('admin.dashboard');
+// });
 
-// Route::group(['prefix'=>'auth','middleware'=>['auth','isAdmin']],
-//     function (){
-//         Route::get('/dashboard', function (){
-//             return view('admin.dashboard');
-//         });
-//     }
-// );
+// Route::get('/index/test', function () {
+// 	return view('test');
+// });
+
+Auth::routes();
+
+Route::group(['prefix'=>'auth','middleware'=>['auth','isAdmin']],
+    function (){
+        Route::get('/dashboard', function (){
+            return view('admin.dashboard');
+        });
+
+        Route::get('users','HomeController@user')->name('user.index');
+    }
+);

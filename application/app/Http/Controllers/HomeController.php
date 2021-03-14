@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\User;
 
 class HomeController extends Controller
 {
@@ -23,13 +24,15 @@ class HomeController extends Controller
      */
     public function index()
     {
-        // // if (auth()->user()->is_admin == 1){
-        // //     return redirect()->to('auth/dashboard');
-        // // }
-        // if (user()->is_admin == 1){
-        //     return redirect()->to('/dashboard');
-        // }
-        // // return redirect()->to('/');
+        if (auth()->user()->is_admin == 1){
+            return redirect()->to('auth/dashboard');
+        }
         return view('home');
+    }
+
+    public function user()
+    {
+        $users = User::where('is_admin','!=',1)->get();
+        return view('admin.user.index',compact('users'));
     }
 }
