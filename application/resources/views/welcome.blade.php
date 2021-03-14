@@ -81,18 +81,15 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Payments From
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="https://www.neteller.com/en/features/security?btag=a_94953b_2560c_&program=NTAFFILIATE">Neteller</a>
+                    <a href="https://www.skrill.com/en/?btag=a_83282b_3896c_Bangladesh&program=SKRILL&gclid=EAIaIQobChMIrZaV6oOt7wIVH4ZLBR1FfQyNEAAYASAAEgK7vPD_BwE">Skrill</a>
+                    <a href="https://phemex.com/lp-crypto-platform?group=722&referralCode=DPXAJ&gclid=EAIaIQobChMI_LnFg4St7wIVhdGWCh0wTwbuEAAYAiAAEgLArPD_BwE">Bitcoin</a>
+                    <a href="https://perfectmoney.com/?welcome=1">Perfect Money</a>
+                    <a href="https://www.mastercard.us/en-us.html">Mastercard</a>
                 </div>
             </div>
         </div>
